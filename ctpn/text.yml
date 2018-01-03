@@ -4,7 +4,7 @@ IS_MULTISCALE: False
 NET_NAME: VGGnet
 ANCHOR_SCALES: [16]
 NCLASSES: 2
-USE_GPU_NMS: True
+USE_GPU_NMS: False
 TRAIN:
   restore: 1
   max_steps: 50000
@@ -33,6 +33,6 @@ TRAIN:
   WEIGHT_DECAY: 0.0005
 TEST:
   HAS_RPN: True
-  DETECT_MODE: H
+  DETECT_MODE: O
   checkpoints_path: checkpoints/
   # checkpoints_path: output/ctpn_end2end/voc_2007_trainval
